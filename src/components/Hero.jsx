@@ -58,37 +58,56 @@ const Hero = () => {
         </div>
       </motion.div>
 
-      {/* RIGHT SIDE: Professional profile image with animation */}
+      {/* RIGHT SIDE: Professional profile image with dynamic morphing shape */}
       <motion.div 
-        initial={{ opacity: 0, scale: 0.8, rotate: 5 }}
-        animate={{ opacity: 1, scale: 1, rotate: 0 }}
+        initial={{ opacity: 0, scale: 0.8, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
-        className="flex-1 mt-12 md:mt-0 flex justify-center items-center relative"
+        className="flex-1 mt-8 md:mt-0 flex justify-center items-start relative"
       >
-        <div className="relative w-64 h-64 md:w-96 md:h-96">
+        <div className="relative w-72 h-72 md:w-[450px] md:h-[450px] flex items-center justify-center">
           {/* Animated Glow Circle behind image */}
           <motion.div 
             animate={{ 
-              scale: [1, 1.1, 1],
-              rotate: [0, 90, 180, 270, 360],
-              opacity: [0.3, 0.5, 0.3]
+              scale: [1, 1.2, 1],
+              rotate: [0, 180, 360],
+              opacity: [0.2, 0.4, 0.2]
             }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-            className="absolute -inset-4 bg-gradient-to-r from-accent-blue to-accent-purple blur-3xl opacity-30 rounded-full"
+            transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
+            className="absolute inset-0 bg-gradient-to-r from-accent-blue via-accent-purple to-accent-cyan blur-[100px] opacity-30 rounded-full"
+          />
+          
+          {/* Intense Pulsing Glow around the image */}
+          <motion.div 
+            animate={{ 
+              scale: [1, 1.05, 1],
+              opacity: [0.4, 0.6, 0.4]
+            }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            className="absolute inset-10 bg-accent-purple/30 blur-[60px] rounded-full z-0"
           />
           
           <motion.div 
-            animate={{ y: [0, -15, 0] }}
-            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-            className="w-full h-full rounded-2xl overflow-hidden border-2 border-white/10 shadow-2xl relative z-10"
+            animate={{ 
+              y: [0, -20, 0],
+              borderRadius: [
+                "60% 40% 30% 70% / 60% 30% 70% 40%",
+                "30% 60% 70% 40% / 50% 60% 30% 60%",
+                "60% 40% 30% 70% / 60% 30% 70% 40%"
+              ]
+            }}
+            transition={{ 
+              y: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+              borderRadius: { duration: 8, repeat: Infinity, ease: "easeInOut" }
+            }}
+            className="w-4/5 h-4/5 overflow-hidden border-4 border-white/10 shadow-[0_0_50px_rgba(139,92,246,0.3)] relative z-10 bg-dark"
           >
-            <div className="w-full h-full bg-dark-card flex items-center justify-center text-white/20">
-              {/* Placeholder for Profile Image */}
-              <div className="text-center">
-                <p className="text-sm font-medium">Professional Photo</p>
-                <p className="text-xs">Sham Matthew S</p>
-              </div>
-            </div>
+            <img 
+              src="/profile(1).jpeg" 
+              alt="Sham Matthew S" 
+              className="w-full h-full object-cover"
+              style={{ objectPosition: '89% 42%' }}
+            />
           </motion.div>
         </div>
       </motion.div>
