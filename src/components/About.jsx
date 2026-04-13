@@ -76,7 +76,7 @@ const About = () => {
 
         {/* RIGHT SIDE: Animated counters */}
         <div className="flex-1 w-full grid grid-cols-2 gap-4 md:gap-8">
-          <Counter target="2" label="Projects" suffix="+" />
+          <Counter target="3" label="Projects" suffix="+" />
           <Counter target="2" label="Internships" />
           <Counter target="3" label="Certifications" />
           <Counter target="3" label="Languages Known" />

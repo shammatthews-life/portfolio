@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Terminal, BarChart3, ShieldCheck, Sparkles } from 'lucide-react';
+import { ExternalLink, Github, Terminal, BarChart3, ShieldCheck, Sparkles, Database } from 'lucide-react';
 
 const ProjectCard = ({ name, description, tools, icon: Icon, link }) => (
   <motion.div 
@@ -72,7 +72,14 @@ const Projects = () => {
       description: "Created interactive dashboards and visualizations to analyze datasets and provide actionable insights for decision-making.",
       tools: ["Excel", "Pandas", "Matplotlib", "Tableau"],
       icon: BarChart3,
-      link: "https://www.linkedin.com/posts/sham-matthew-3958a0387_excel-dashboard-github-activity-7380810926037573632-N8Ge?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAF9ZfCEBIa4kHZKKUaMtmLDrKTMtRDlQV_c"
+      link: "https://github.com/shammatthews-life/excel-project"
+    },
+    {
+      name: "SQL Data Analysis Project",
+      description: "A comprehensive SQL project demonstrating database querying, data manipulation, and analytical skills to extract meaningful insights from datasets.",
+      tools: ["SQL", "Data Analysis", "Database Management"],
+      icon: Database,
+      link: "https://github.com/shammatthews-life/sql-project/tree/main/data"
     }
   ];
 
@@ -85,7 +92,7 @@ const Projects = () => {
           <div className="h-1 w-20 bg-accent-purple rounded-full mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
