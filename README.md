@@ -26,6 +26,7 @@ Here, you'll find end-to-end case studies, interactive dashboards, data cleaning
 * **Key Highlights:** Explores modern filtration methodologies and performance optimization strategies.
 
 ---
+
 ## 🐍 Python & Exploratory Data Analysis (EDA)
 
 ### [TikTok EDA Project](https://www.google.com/search?q=https://github.com/shammatthews-life/Tiktok-EDA)
