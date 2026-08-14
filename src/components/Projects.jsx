@@ -68,9 +68,14 @@ const Projects = () => {
       icon: Sparkles
     },
     {
-      name: "Data Analysis & Dashboard Project",
-      description: "Created interactive dashboards and visualizations to analyze datasets and provide actionable insights for decision-making.",
-      tools: ["Excel", "Pandas", "Matplotlib", "Tableau"],
+      name: "Excel Sales Analysis Dashboard",
+      description: (
+        <div className="space-y-3">
+          <p>Created interactive dashboards and visualizations to analyze sales datasets and provide actionable insights for decision-making. The dashboard provides real-time tracking of sales performance, revenue trends, and regional distribution.</p>
+          <p className="text-white/50 text-xs">Key Features: Dynamic pivot tables, advanced filtering, KPI tracking, trend analysis, and data-driven recommendations for revenue optimization.</p>
+        </div>
+      ),
+      tools: ["Excel", "Pivot Tables", "Data Visualization", "Analytics"],
       icon: BarChart3,
       link: "https://github.com/shammatthews-life/excel-project"
     },
@@ -80,6 +85,18 @@ const Projects = () => {
       tools: ["SQL", "Data Analysis", "Database Management"],
       icon: Database,
       link: "https://github.com/shammatthews-life/sql-project/tree/main/data"
+    },
+    {
+      name: "Air Pure Innovations - Air Quality Dashboard",
+      description: (
+        <div className="space-y-3">
+          <p>Built an advanced Tableau dashboard analyzing air quality data across states, examining correlations between air purity levels and health impacts including cases, vehicle-related deaths, and mortality rates.</p>
+          <p className="text-white/50 text-xs">Key Insights: State-by-state air quality analysis, impact on public health metrics, trend visualization, and data-driven recommendations for air quality improvement innovations.</p>
+        </div>
+      ),
+      tools: ["Tableau", "Data Analysis", "Air Quality", "Health Analytics"],
+      icon: BarChart3,
+      link: "https://public.tableau.com/app/profile/sham.matthew/viz/AirPureInnovations/AirQuality"
     }
   ];
 
