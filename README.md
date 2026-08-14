@@ -15,7 +15,14 @@ Here, you'll find end-to-end case studies, interactive dashboards, data cleaning
 - [📫 Connect With Me](#-connect-with-me)
 
 ---
+## 💡 Product & Engineering Innovations
 
+### [Air Purifier Innovations](https://github.com/shammatthews-life/Air-purifier-Innovations)
+* **Description:** Documentation and analysis focusing on innovative air purification technology, engineering concepts, and design improvements.
+* **Tech Stack:** Product Development, Research, Data Analysis, Engineering Documentation
+* **Key Highlights:** Explores modern filtration methodologies and performance optimization strategies.
+
+---
 ## 📊 Tableau & Data Visualization
 
 ### [HR Dashboard using Tableau](https://github.com/shammatthews-life/Hr-dashboard-using-Tableau)
@@ -43,14 +50,7 @@ Here, you'll find end-to-end case studies, interactive dashboards, data cleaning
 
 ---
 
-## 💡 Product & Engineering Innovations
 
-### [Air Purifier Innovations](https://github.com/shammatthews-life/Air-purifier-Innovations)
-* **Description:** Documentation and analysis focusing on innovative air purification technology, engineering concepts, and design improvements.
-* **Tech Stack:** Product Development, Research, Data Analysis, Engineering Documentation
-* **Key Highlights:** Explores modern filtration methodologies and performance optimization strategies.
-
----
 
 ## 📫 Connect With Me
 
